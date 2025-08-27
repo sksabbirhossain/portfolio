@@ -1,13 +1,18 @@
 import React from "react";
+import MenuOpenButton from "./MenuOpenButton";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
-    <nav className="fixed top-0 z-50 w-full bg-white/50 shadow shadow-gray-100 backdrop-blur-md">
+    <nav className="fixed top-0 z-50 w-full bg-white/50 shadow-sm shadow-gray-100/50 backdrop-blur-md">
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-2">
         {/* logo */}
         <div className="">
           <a href="#home">
-            <h1 className="text-2xl font-bold">MyPortfolio</h1>
+            <h1 className="relative text-2xl font-bold text-gray-800 select-none">
+              Portfolio
+              <span className="absolute -right-2 bottom-2 h-1.5 w-1.5 rounded-full bg-emerald-600" />
+            </h1>
           </a>
         </div>
 
@@ -16,7 +21,7 @@ const Header = () => {
           <li>
             <a
               href="#home"
-              className="cursor-pointer font-medium hover:text-gray-500"
+              className="font-ovo cursor-pointer text-[16px] font-medium text-gray-800 transition-all duration-300 ease-in-out hover:text-emerald-600"
             >
               Home
             </a>
@@ -24,7 +29,7 @@ const Header = () => {
           <li>
             <a
               href="#about"
-              className="cursor-pointer font-medium hover:text-gray-500"
+              className="font-ovo cursor-pointer text-[16px] font-medium text-gray-800 transition-all duration-300 ease-in-out hover:text-emerald-600"
             >
               About me
             </a>
@@ -32,7 +37,7 @@ const Header = () => {
           <li>
             <a
               href="#services"
-              className="cursor-pointer font-medium hover:text-gray-500"
+              className="font-ovo cursor-pointer text-[16px] font-medium text-gray-800 transition-all duration-300 ease-in-out hover:text-emerald-600"
             >
               Services
             </a>
@@ -40,7 +45,7 @@ const Header = () => {
           <li>
             <a
               href="#projects"
-              className="cursor-pointer font-medium hover:text-gray-500"
+              className="font-ovo cursor-pointer text-[16px] font-medium text-gray-800 transition-all duration-300 ease-in-out hover:text-emerald-600"
             >
               Projects
             </a>
@@ -48,7 +53,7 @@ const Header = () => {
           <li>
             <a
               href="#contact"
-              className="cursor-pointer font-medium hover:text-gray-500"
+              className="font-ovo cursor-pointer text-[16px] font-medium text-gray-800 transition-all duration-300 ease-in-out hover:text-emerald-600"
             >
               Contact me
             </a>
@@ -56,28 +61,11 @@ const Header = () => {
         </ul>
 
         {/* small devices open menu button */}
-        <button className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-700 ring-1 ring-gray-300 hover:bg-gray-100/50 focus:ring-2 focus:ring-gray-400 focus:outline-none md:hidden">
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-              />
-            </svg>
-          </span>
-        </button>
+        <MenuOpenButton />
 
-        {/* contact me button */}
-        <a href="#contact" className="hidden md:block">
-          <button className="flex cursor-pointer items-center gap-2 rounded-full border bg-transparent px-4 py-2 font-medium text-black capitalize transition-colors duration-300 ease-in-out hover:bg-gray-800 hover:text-white">
+        {/* download resume */}
+        <a href="/resume.pdf" download className="hidden md:block">
+          <button className="flex cursor-pointer items-center gap-2 rounded-full border border-emerald-600 bg-transparent px-4 py-2 font-medium text-black capitalize transition-all duration-300 ease-in-out hover:border-gray-800 hover:bg-gray-800 hover:text-white">
             <span>my resume</span>
             <span>
               <svg
@@ -98,6 +86,9 @@ const Header = () => {
           </button>
         </a>
       </div>
+
+      {/* mobile menu menu */}
+      <MobileMenu />
     </nav>
   );
 };

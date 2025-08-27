@@ -1,5 +1,6 @@
 import Footer from "@/components/common/Footer/Footer";
 import Header from "@/components/common/Header/Header";
+import Provider from "@/utils/Provider";
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 
@@ -25,9 +26,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${outfit.variable} ${ovo.variable} font-outfit`}>
-        <Header />
-        {children}
-        <Footer />
+        <Provider>
+          <Header />
+          {children}
+          <Footer />
+        </Provider>
       </body>
     </html>
   );

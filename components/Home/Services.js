@@ -4,16 +4,17 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="mx-auto max-w-5xl px-4 pt-[75px]" id="services">
+    <div className="mx-auto max-w-5xl px-4 pt-18 sm:pt-[75px]" id="services">
       {/* heading */}
       <div className="space-y-1 text-center">
-        <p className="font-ovo text-xl text-gray-500">What i offers</p>
+        <p className="font-ovo text-xl text-gray-600">What i offers</p>
         <h1 className="font-ovo mb-2 text-4xl font-bold text-gray-700 sm:text-5xl">
           My services
         </h1>
-        <p className="font-ovo mx-auto max-w-xl text-[16px] text-gray-500">
-          I am a full stack developer from Bangladesh, with 10 years of
-          experience in multiple companies like Microsoft, Tesla and Apple.
+        <p className="font-ovo mx-auto max-w-xl text-[16px] text-gray-700">
+          I provide full-stack web development solutions, creating modern,
+          responsive, and user-friendly websites and applications tailored to
+          your needs.
         </p>
       </div>
 
@@ -32,8 +33,8 @@ const Services = () => {
           </h3>
           {/* details */}
           <p className="font-ovo text-[16px] text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            voluptates consectetur fugiat numquam nostrum.
+            I design intuitive and engaging UI/UX that enhances user experience
+            and boosts interaction.
           </p>
           <Link
             href={""}
@@ -42,6 +43,7 @@ const Services = () => {
             Lern more
           </Link>
         </div>
+
         {/* card 2*/}
         <div className="z-10 flex flex-3 flex-col space-y-2 rounded-md border border-gray-200 bg-indigo-50/50 px-4 py-5 backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg">
           {/* icon */}
@@ -59,8 +61,8 @@ const Services = () => {
           </h3>
           {/* details */}
           <p className="font-ovo text-[16px] text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            voluptates consectetur fugiat numquam nostrum.
+            I build responsive and dynamic frontend interfaces that bring
+            designs to life seamlessly.
           </p>
           <Link
             href={""}
@@ -69,6 +71,7 @@ const Services = () => {
             Lern more
           </Link>
         </div>
+
         {/* card 3*/}
         <div className="z-10 flex flex-3 flex-col space-y-2 rounded-md border border-gray-200 bg-teal-50/50 px-4 py-5 backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg">
           {/* icon */}
@@ -86,8 +89,8 @@ const Services = () => {
           </h3>
           {/* details */}
           <p className="font-ovo text-[16px] text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            voluptates consectetur fugiat numquam nostrum.
+            I develop robust and scalable backend systems to power smooth and
+            secure applications.
           </p>
           <Link
             href={""}

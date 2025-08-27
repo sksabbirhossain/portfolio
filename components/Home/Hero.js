@@ -44,8 +44,9 @@ const Hero = () => {
             Hire Me
           </a>
           <a
-            href="#projects"
-            className="flex items-center gap-2 rounded-full border border-gray-300 px-6 py-2 text-gray-700 capitalize transition-colors duration-500 ease-in-out hover:bg-gray-700 hover:text-white"
+            href="/resume.pdf"
+            download
+            className="flex items-center gap-2 rounded-full border border-emerald-600 px-5 py-2 text-gray-700 capitalize transition-all duration-300 ease-in-out hover:border-gray-700 hover:bg-gray-700 hover:text-white"
           >
             <span>my resume</span>
             <span>

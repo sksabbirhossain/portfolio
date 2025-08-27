@@ -5,16 +5,16 @@ import ProjectCardLink from "./Card/ProjectCardLink";
 
 const Projects = () => {
   return (
-    <div className="mx-auto max-w-5xl px-4 pt-[75px]" id="projects">
+    <div className="mx-auto max-w-5xl px-4 pt-18 sm:pt-[75px]" id="projects">
       {/* heading */}
       <div className="space-y-1 text-center">
-        <p className="font-ovo text-xl text-gray-500">What i was do</p>
+        <p className="font-ovo text-xl text-gray-600">What i was do</p>
         <h1 className="font-ovo mb-2 text-4xl font-bold text-gray-700 sm:text-5xl">
           My projects
         </h1>
-        <p className="font-ovo mx-auto max-w-xl text-[16px] text-gray-500">
-          I am a full stack developer from Bangladesh, with 10 years of
-          experience in multiple companies like Microsoft, Tesla and Apple.
+        <p className="font-ovo mx-auto max-w-xl text-[16px] text-gray-700">
+          Explore some of the projects I’ve built, showcasing my skills in
+          full-stack development, UI/UX design, and modern web technologies.
         </p>
       </div>
 

@@ -1,21 +1,43 @@
+import * as motion from "motion/react-client";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
 import ProjectCardLink from "./Card/ProjectCardLink";
 
 const Projects = () => {
   return (
-    <div className="mx-auto max-w-5xl px-4 pt-18 sm:pt-[75px]" id="projects">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      className="mx-auto max-w-5xl px-4 pt-18 sm:pt-[75px]"
+      id="projects"
+    >
       {/* heading */}
       <div className="space-y-1 text-center">
-        <p className="font-ovo text-xl text-gray-600">What i was do</p>
-        <h1 className="font-ovo mb-2 text-4xl font-bold text-gray-700 sm:text-5xl">
+        <motion.p
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="font-ovo text-xl text-gray-600"
+        >
+          What i was do
+        </motion.p>
+        <motion.h2
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          className="font-ovo mb-2 text-4xl font-bold text-gray-700 sm:text-5xl"
+        >
           My projects
-        </h1>
-        <p className="font-ovo mx-auto max-w-xl text-[16px] text-gray-700">
+        </motion.h2>
+        <motion.p
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.2, delay: 0.5 }}
+          className="font-ovo mx-auto max-w-xl text-[16px] text-gray-700"
+        >
           Explore some of the projects I’ve built, showcasing my skills in
           full-stack development, UI/UX design, and modern web technologies.
-        </p>
+        </motion.p>
       </div>
 
       {/* description */}
@@ -24,7 +46,12 @@ const Projects = () => {
         <div className="absolute top-[50%] right-0 -z-10 h-12 w-full max-w-[500rem] bg-gradient-to-r from-indigo-500 from-20% via-sky-500 via-30% to-emerald-500 to-90% blur-[150px] sm:rotate-12" />
 
         {/* project */}
-        <div className="bg-white-50/50 flex flex-3 flex-col overflow-hidden rounded-md shadow-sm backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg">
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="bg-white-50/50 flex flex-3 flex-col overflow-hidden rounded-md shadow-sm backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg"
+        >
           {/* image */}
           <div className="flex h-full max-h-[170px] w-full rounded-md shadow">
             <Image
@@ -77,10 +104,15 @@ const Projects = () => {
               backend={"https://github.com/sksabbirhossain/business-ims-server"}
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* project 2 */}
-        <div className="bg-white-50/50 flex flex-3 flex-col overflow-hidden rounded-md shadow-sm backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg">
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="bg-white-50/50 flex flex-3 flex-col overflow-hidden rounded-md shadow-sm backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg"
+        >
           {/* image */}
           <div className="flex h-full max-h-[170px] w-full rounded-md shadow">
             <Image
@@ -133,10 +165,15 @@ const Projects = () => {
               backend={"https://github.com/sksabbirhossain/daily-blogs-server"}
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* project 3 */}
-        <div className="bg-white-50/50 flex flex-3 flex-col overflow-hidden rounded-md shadow-sm backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg">
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="bg-white-50/50 flex flex-3 flex-col overflow-hidden rounded-md shadow-sm backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg"
+        >
           {/* image */}
           <div className="flex h-full max-h-[170px] w-full rounded-md shadow">
             <Image
@@ -185,10 +222,15 @@ const Projects = () => {
               }
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* project 4*/}
-        <div className="bg-white-50/50 flex flex-3 flex-col overflow-hidden rounded-md shadow-sm backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg">
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="bg-white-50/50 flex flex-3 flex-col overflow-hidden rounded-md shadow-sm backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg"
+        >
           {/* image */}
           <div className="flex h-full max-h-[170px] w-full rounded-md shadow">
             <Image
@@ -235,14 +277,19 @@ const Projects = () => {
               backend={"https://github.com/sksabbirhossain/social-media-server"}
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* project 5*/}
-        <div className="bg-white-50/50 flex flex-3 flex-col overflow-hidden rounded-md shadow-sm backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg">
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="bg-white-50/50 flex flex-3 flex-col overflow-hidden rounded-md shadow-sm backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg"
+        >
           {/* image */}
           <div className="flex h-full max-h-[170px] w-full rounded-md shadow">
             <Image
-              src={"/projects/social-media.png"}
+              src={"/projects/chat-app.png"}
               width={1000}
               height={1000}
               alt="project image"
@@ -284,10 +331,15 @@ const Projects = () => {
               backend={"https://github.com/sksabbirhossain/chat-app-server"}
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* project 6*/}
-        <div className="bg-white-50/50 flex flex-3 flex-col overflow-hidden rounded-md shadow-sm backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg">
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
+          className="bg-white-50/50 flex flex-3 flex-col overflow-hidden rounded-md shadow-sm backdrop-blur-lg transition-all duration-300 ease-in-out hover:shadow-lg"
+        >
           {/* image */}
           <div className="flex h-full max-h-[170px] w-full rounded-md shadow">
             <Image
@@ -339,9 +391,9 @@ const Projects = () => {
               backend={"https://github.com/sksabbirhossain/daily-food-server"}
             />
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

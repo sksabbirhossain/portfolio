@@ -1,19 +1,47 @@
+import * as motion from "motion/react-client";
 import Image from "next/image";
-import React from "react";
 
 const About = () => {
   return (
-    <div className="mx-auto max-w-5xl px-4 pt-18 sm:pt-[60px]" id="about">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      className="mx-auto max-w-5xl px-4 pt-18 sm:pt-[60px]"
+      id="about"
+    >
       {/* heading */}
       <div className="space-y-2 text-center">
-        <p className="font-ovo text-xl text-gray-600">Introduction</p>
-        <h1 className="font-ovo mb-4 text-4xl font-bold text-gray-700 sm:text-5xl">
+        <motion.p
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="font-ovo text-xl text-gray-600"
+        >
+          Introduction
+        </motion.p>
+        <motion.h2
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          className="font-ovo mb-4 text-4xl font-bold text-gray-700 sm:text-5xl"
+        >
           About Me
-        </h1>
+        </motion.h2>
       </div>
       {/* description */}
-      <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-6 sm:gap-6">
-        <div className="sm:col-span-2">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-6 sm:gap-6"
+      >
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="sm:col-span-2"
+        >
           <Image
             src={"/image.png"}
             width={1000}
@@ -21,10 +49,20 @@ const About = () => {
             alt="image"
             className="h-full w-full rounded-xl object-cover"
           />
-        </div>
-        <div className="relative space-y-3 sm:col-span-4">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.8 }}
+          className="relative space-y-3 sm:col-span-4"
+        >
           {/* about */}
-          <p className="text-md mx-auto max-w-3xl text-[16px] leading-7 text-gray-600">
+          <motion.p
+            initial={{ y: -10, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.2, delay: 0.8 }}
+            className="text-md mx-auto max-w-3xl text-[16px] leading-7 text-gray-600"
+          >
             I am a passionate web developer with expertise in creating dynamic
             and responsive websites. With a strong foundation in both front-end
             and back-end technologies, I strive to deliver seamless user
@@ -32,15 +70,25 @@ const About = () => {
             Node.js, and more. I am dedicated to continuous learning and staying
             updated with the latest industry trends to provide innovative
             solutions.
-          </p>
+          </motion.p>
 
           {/* background */}
           <div className="absolute top-[50%] left-0 h-10 w-full max-w-[500rem] rotate-45 bg-gradient-to-r from-sky-500 from-10% via-indigo-500/90 via-30% to-emerald-500 to-90% blur-[65px] sm:-rotate-[30deg]" />
 
           {/* skills */}
-          <div className="mt-6 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-3 md:grid-cols-3">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            className="mt-6 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-3 md:grid-cols-3"
+          >
             {/* card */}
-            <div className="z-10 flex flex-3 flex-col rounded-md border border-gray-200 bg-indigo-50/50 px-3 py-5 backdrop-blur-md transition-all duration-300 ease-in-out hover:shadow-lg">
+            <motion.div
+              initial={{ opacity: 0, y: -15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="z-10 flex flex-3 flex-col rounded-md border border-gray-200 bg-indigo-50/50 px-3 py-5 backdrop-blur-md transition-all duration-300 ease-in-out hover:shadow-lg"
+            >
               {/* lang icon */}
               <p className="text-gray-500">
                 <svg
@@ -65,9 +113,14 @@ const About = () => {
                 HTML, CSS, JavaScript, React Js, Next Js, Node Js, Express Js,
                 MongoDB, Tailwind CSS etc.
               </p>
-            </div>
+            </motion.div>
             {/* card 2 */}
-            <div className="z-10 flex flex-3 flex-col rounded-md border border-gray-200 bg-amber-50/50 px-3 py-5 backdrop-blur-md transition-all duration-300 ease-in-out hover:shadow-lg">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              className="z-10 flex flex-3 flex-col rounded-md border border-gray-200 bg-amber-50/50 px-3 py-5 backdrop-blur-md transition-all duration-300 ease-in-out hover:shadow-lg"
+            >
               {/* lang icon */}
               <p className="text-gray-500">
                 <svg
@@ -92,9 +145,15 @@ const About = () => {
                 Built more than 10 projects including E-commerce, Inventory
                 management system, Social Media app etc.
               </p>
-            </div>
+            </motion.div>
+
             {/* card 3 */}
-            <div className="z-10 flex flex-3 flex-col rounded-md border border-gray-200 bg-sky-50/50 px-3 py-5 backdrop-blur-md transition-all duration-300 ease-in-out hover:shadow-lg">
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9 }}
+              className="z-10 flex flex-3 flex-col rounded-md border border-gray-200 bg-sky-50/50 px-3 py-5 backdrop-blur-md transition-all duration-300 ease-in-out hover:shadow-lg"
+            >
               {/* lang icon */}
               <p className="text-gray-500">
                 <svg
@@ -119,100 +178,155 @@ const About = () => {
                 built my skills in software development, focusing on the MERN
                 stack and modern web technologies.
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* experience */}
-          <div className="mt-6">
-            <p className="font-ovo text-[16px] font-semibold text-gray-500 capitalize">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mt-6"
+          >
+            <motion.p
+              initial={{ opacity: 0, y: -5 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9 }}
+              className="font-ovo text-[16px] font-semibold text-gray-500 capitalize"
+            >
               what i use
-            </p>
+            </motion.p>
             <div className="mt-2 flex flex-wrap gap-5">
-              <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
+                className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg"
+              >
                 <Image
                   src={"/tech/react.png"}
                   width={40}
                   height={40}
                   alt="html"
                 />
-              </div>
+              </motion.div>
 
-              <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <motion.div
+                initial={{ opacity: 0, y: -15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
+                className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg"
+              >
                 <Image
                   src={"/tech/node.png"}
                   width={40}
                   height={40}
                   alt="html"
                 />
-              </div>
+              </motion.div>
 
-              <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
+                className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg"
+              >
                 <Image
                   src={"/tech/next.png"}
                   width={40}
                   height={40}
                   alt="html"
                 />
-              </div>
+              </motion.div>
 
-              <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <motion.div
+                initial={{ opacity: 0, y: -25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
+                className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg"
+              >
                 <Image
                   src={"/tech/mongodb.png"}
                   width={40}
                   height={40}
                   alt="html"
                 />
-              </div>
+              </motion.div>
 
-              <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <motion.div
+                initial={{ opacity: 0, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
+                className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg"
+              >
                 <Image
                   src={"/tech/tailwindcss.png"}
                   width={40}
                   height={40}
                   alt="html"
                 />
-              </div>
+              </motion.div>
 
-              <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <motion.div
+                initial={{ opacity: 0, y: -35 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
+                className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg"
+              >
                 <Image
                   src={"/tech/firebase.png"}
                   width={40}
                   height={40}
                   alt="html"
                 />
-              </div>
+              </motion.div>
 
-              <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <motion.div
+                initial={{ opacity: 0, y: -40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
+                className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg"
+              >
                 <Image
                   src={"/tech/git.png"}
                   width={40}
                   height={40}
                   alt="html"
                 />
-              </div>
+              </motion.div>
 
-              <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <motion.div
+                initial={{ opacity: 0, y: -45 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
+                className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg"
+              >
                 <Image
                   src={"/tech/figma.png"}
                   width={40}
                   height={40}
                   alt="html"
                 />
-              </div>
+              </motion.div>
 
-              <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <motion.div
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
+                className="flex h-12 w-12 items-center justify-center rounded-md border border-gray-200 p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg"
+              >
                 <Image
                   src={"/tech/vs-code.png"}
                   width={40}
                   height={40}
                   alt="html"
                 />
-              </div>
+              </motion.div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 

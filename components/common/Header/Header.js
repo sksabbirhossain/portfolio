@@ -1,4 +1,3 @@
-import React from "react";
 import MenuOpenButton from "./MenuOpenButton";
 import MobileMenu from "./MobileMenu";
 

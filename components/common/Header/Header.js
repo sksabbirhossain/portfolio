@@ -2,18 +2,20 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav className="fixed top-0 z-50 w-full bg-white/50 px-2 py-2 shadow shadow-gray-100 backdrop-blur-md">
+    <nav className="fixed top-0 z-50 w-full bg-white/50 px-4 py-2 shadow shadow-gray-100 backdrop-blur-md">
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between">
         {/* logo */}
         <div className="">
-          <h1 className="text-2xl font-bold">MyPortfolio</h1>
+          <a href="#home">
+            <h1 className="text-2xl font-bold">MyPortfolio</h1>
+          </a>
         </div>
-        {/* nav */}
 
+        {/* nav */}
         <ul className="hidden items-center gap-6 md:flex lg:gap-8">
           <li>
             <a
-              href="#"
+              href="#home"
               className="cursor-pointer font-medium hover:text-gray-500"
             >
               Home
@@ -21,7 +23,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="#about"
               className="cursor-pointer font-medium hover:text-gray-500"
             >
               About me
@@ -29,7 +31,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="#services"
               className="cursor-pointer font-medium hover:text-gray-500"
             >
               Services
@@ -37,7 +39,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="#projects"
               className="cursor-pointer font-medium hover:text-gray-500"
             >
               Projects
@@ -45,7 +47,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="#contact"
               className="cursor-pointer font-medium hover:text-gray-500"
             >
               Contact me

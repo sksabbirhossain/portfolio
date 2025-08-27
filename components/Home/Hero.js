@@ -3,7 +3,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
+    <div
+      className="relative flex h-screen w-full items-center justify-center overflow-hidden"
+      id="home"
+    >
       <div className="absolute top-0 left-0 h-12 w-full max-w-[500rem] rotate-12 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% blur-3xl" />
 
       <div className="absolute top-0 right-0 h-12 w-full max-w-[500rem] -rotate-12 bg-gradient-to-r from-indigo-500 from-20% via-sky-500 via-30% to-emerald-500 to-90% blur-[70px]" />

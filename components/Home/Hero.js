@@ -7,9 +7,9 @@ const Hero = () => {
       className="relative flex h-screen w-full items-center justify-center overflow-hidden"
       id="home"
     >
-      <div className="absolute top-0 left-0 h-12 w-full max-w-[500rem] rotate-12 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% blur-3xl" />
+      <div className="absolute top-0 left-[10%] h-14 w-[80%] max-w-[500rem] bg-gradient-to-r from-sky-500 from-10% via-green-700 via-30% to-emerald-500 to-90% blur-[75px]" />
 
-      <div className="absolute top-0 right-0 h-12 w-full max-w-[500rem] -rotate-12 bg-gradient-to-r from-indigo-500 from-20% via-sky-500 via-30% to-emerald-500 to-90% blur-[70px]" />
+      <div className="absolute top-[50%] left-[10%] h-14 w-[80%] max-w-[500rem] bg-gradient-to-r from-sky-500 from-10% via-indigo-500 via-30% to-emerald-500 to-90% blur-[75px]" />
 
       <div className="z-10 items-center px-2 text-center">
         <div className="flex flex-col items-center gap-4">

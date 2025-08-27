@@ -2,8 +2,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav className="fixed top-0 z-50 w-full bg-white/50 px-4 py-2 shadow shadow-gray-100 backdrop-blur-md">
-      <div className="mx-auto flex w-full max-w-5xl items-center justify-between">
+    <nav className="fixed top-0 z-50 w-full bg-white/50 shadow shadow-gray-100 backdrop-blur-md">
+      <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-2">
         {/* logo */}
         <div className="">
           <a href="#home">
@@ -77,8 +77,24 @@ const Header = () => {
 
         {/* contact me button */}
         <a href="#contact" className="hidden md:block">
-          <button className="flex cursor-pointer items-center gap-3 rounded-full border bg-transparent px-8 py-2 font-medium text-black transition-colors duration-300 hover:bg-gray-800 hover:text-white">
-            Contact Me
+          <button className="flex cursor-pointer items-center gap-2 rounded-full border bg-transparent px-4 py-2 font-medium text-black capitalize transition-colors duration-300 ease-in-out hover:bg-gray-800 hover:text-white">
+            <span>my resume</span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                />
+              </svg>
+            </span>
           </button>
         </a>
       </div>

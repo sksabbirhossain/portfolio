@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="mx-auto max-w-5xl px-4" id="about">
+    <div className="mx-auto max-w-5xl px-4 sm:pt-[60px]" id="about">
       {/* heading */}
       <div className="space-y-2 text-center">
         <p className="font-ovo text-xl text-gray-500">Introduction</p>
@@ -12,7 +12,7 @@ const About = () => {
         </h1>
       </div>
       {/* description */}
-      <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-6 sm:gap-14">
+      <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-6 sm:gap-6">
         <div className="sm:col-span-2">
           <Image
             src={"/image.png"}
@@ -22,7 +22,7 @@ const About = () => {
             className="h-full w-full rounded-xl object-cover"
           />
         </div>
-        <div className="space-y-3 sm:col-span-4">
+        <div className="relative space-y-3 sm:col-span-4">
           {/* about */}
           <p className="text-md mx-auto max-w-3xl text-[16px] leading-7 text-gray-600">
             I am a passionate web developer with expertise in creating dynamic
@@ -33,10 +33,14 @@ const About = () => {
             updated with the latest industry trends to provide innovative
             solutions.
           </p>
+
+          {/* background */}
+          <div className="absolute top-[50%] left-0 h-10 w-full max-w-[500rem] rotate-45 bg-gradient-to-r from-sky-500 from-10% via-indigo-500/90 via-30% to-emerald-500 to-90% blur-[65px] sm:-rotate-[30deg]" />
+
           {/* skills */}
-          {/* card */}
-          <div className="mt-6 flex max-w-3xl flex-col gap-4 sm:flex-row sm:gap-6">
-            <div className="flex flex-3 flex-col rounded-md border border-gray-200 px-3 py-5 hover:shadow-lg">
+          <div className="mt-6 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-3 md:grid-cols-3">
+            {/* card */}
+            <div className="z-10 flex flex-3 flex-col rounded-md border border-gray-200 bg-indigo-50/50 px-3 py-5 backdrop-blur-md transition-all duration-300 ease-in-out hover:shadow-lg">
               {/* lang icon */}
               <p className="text-gray-500">
                 <svg
@@ -63,7 +67,7 @@ const About = () => {
               </p>
             </div>
             {/* card 2 */}
-            <div className="flex flex-3 flex-col rounded-md border border-gray-200 px-3 py-5 hover:shadow-lg">
+            <div className="z-10 flex flex-3 flex-col rounded-md border border-gray-200 bg-amber-50/50 px-3 py-5 backdrop-blur-md transition-all duration-300 ease-in-out hover:shadow-lg">
               {/* lang icon */}
               <p className="text-gray-500">
                 <svg
@@ -90,7 +94,7 @@ const About = () => {
               </p>
             </div>
             {/* card 3 */}
-            <div className="flex flex-3 flex-col rounded-md border border-gray-200 px-3 py-5 hover:shadow-lg">
+            <div className="z-10 flex flex-3 flex-col rounded-md border border-gray-200 bg-sky-50/50 px-3 py-5 backdrop-blur-md transition-all duration-300 ease-in-out hover:shadow-lg">
               {/* lang icon */}
               <p className="text-gray-500">
                 <svg

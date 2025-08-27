@@ -7,7 +7,7 @@ const About = () => {
       {/* heading */}
       <div className="space-y-2 text-center">
         <p className="font-ovo text-xl text-gray-500">Introduction</p>
-        <h1 className="font-ovo mb-4 text-5xl font-bold text-gray-700">
+        <h1 className="font-ovo mb-4 text-4xl sm:text-5xl font-bold text-gray-700">
           About Me
         </h1>
       </div>

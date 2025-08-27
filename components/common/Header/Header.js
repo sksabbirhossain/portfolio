@@ -12,7 +12,7 @@ const Header = () => {
         </div>
 
         {/* nav */}
-        <ul className="hidden items-center gap-6 md:flex lg:gap-8">
+        <ul className="hidden items-center gap-4 md:flex lg:gap-6">
           <li>
             <a
               href="#home"

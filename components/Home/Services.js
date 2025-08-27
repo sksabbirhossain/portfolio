@@ -8,7 +8,7 @@ const Services = () => {
       {/* heading */}
       <div className="space-y-1 text-center">
         <p className="font-ovo text-xl text-gray-500">What i offers</p>
-        <h1 className="font-ovo mb-2 text-5xl font-bold text-gray-700">
+        <h1 className="font-ovo mb-2 text-4xl font-bold text-gray-700 sm:text-5xl">
           My services
         </h1>
         <p className="font-ovo mx-auto max-w-xl text-[16px] text-gray-500">

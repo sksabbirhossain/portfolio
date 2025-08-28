@@ -63,9 +63,25 @@ const Contact = () => {
         ></textarea>
         <button
           type="submit"
-          className="cursor-pointer self-center rounded bg-gray-600 px-6 py-2 text-white transition-all duration-300 ease-in-out hover:bg-gray-700 focus:outline-none"
+          className="font-ovo flex cursor-pointer items-center gap-1 self-center rounded-full border border-gray-500/30 bg-emerald-600/80 px-5 py-2 text-center text-gray-50 capitalize transition-all duration-500 ease-in-out hover:border-gray-200/30 hover:bg-gray-100/30 hover:text-gray-700 hover:shadow hover:shadow-gray-400/30 hover:backdrop-blur-sm"
         >
-          Send Message
+          Send Message{" "}
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-3"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+              />
+            </svg>
+          </span>
         </button>
       </motion.form>
     </motion.div>

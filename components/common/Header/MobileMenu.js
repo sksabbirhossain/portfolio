@@ -62,7 +62,7 @@ const MobileMenu = () => {
 
       {/* download resume */}
       <a href="/resume.pdf" download onClick={mobileMenuHandler}>
-        <button className="flex cursor-pointer items-center gap-2 rounded-full border border-emerald-600 bg-transparent px-4 py-2 font-medium text-black capitalize transition-all duration-300 ease-in-out hover:border-gray-800 hover:bg-gray-800 hover:text-white">
+        <button className="font-ovo flex cursor-pointer items-center gap-2 rounded-full border border-gray-500/30 bg-transparent px-5 py-2 text-center text-gray-700 capitalize transition-all duration-300 ease-in-out hover:border-gray-200/30 hover:bg-gray-100/30 hover:shadow hover:shadow-gray-400/30 hover:backdrop-blur-sm">
           <span>my resume</span>
           <span>
             <svg

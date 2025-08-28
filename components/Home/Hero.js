@@ -32,7 +32,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="font-ovo text-xl text-gray-600 capitalize sm:text-2xl"
           >
-            Hi! I’m Md Sabbir Hossain 👋🏻
+            Hi👋I’m Md Sabbir Hossain 
           </motion.p>
         </div>
         <div className="mt-3 flex flex-col items-center justify-center text-center">
@@ -64,7 +64,7 @@ const Hero = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1 }}
             href="#contact"
-            className="flex items-center gap-1 rounded-full bg-gray-700 px-8 py-2 text-white transition-colors duration-500 hover:bg-gray-800"
+            className="font-ovo flex cursor-pointer items-center gap-2 rounded-full border border-gray-500/30 bg-emerald-600 px-6 py-2 text-center text-gray-100 capitalize transition-all duration-500 ease-in-out hover:border-gray-200/30 hover:bg-gray-100/30 hover:text-gray-700 hover:shadow hover:shadow-gray-400/30 hover:backdrop-blur-sm"
           >
             Hire Me{" "}
             <span>
@@ -74,7 +74,7 @@ const Hero = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-4"
+                className="size-3"
               >
                 <path
                   strokeLinecap="round"
@@ -92,7 +92,7 @@ const Hero = () => {
             transition={{ duration: 0.4, delay: 1.1 }}
             href="/resume.pdf"
             download
-            className="flex items-center gap-2 rounded-full border border-emerald-600 px-5 py-2 text-gray-700 capitalize transition-all duration-300 ease-in-out hover:border-gray-700 hover:bg-gray-700 hover:text-white"
+            className="font-ovo flex cursor-pointer items-center gap-2 rounded-full border border-gray-500/30 bg-transparent px-5 py-2 text-center text-gray-700 capitalize transition-all duration-300 ease-in-out hover:border-gray-200/30 hover:bg-gray-100/30 hover:shadow hover:shadow-gray-400/30 hover:backdrop-blur-sm"
           >
             <span>my resume</span>
             <span>
@@ -102,7 +102,7 @@ const Hero = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-4"
+                className="size-3"
               >
                 <path
                   strokeLinecap="round"

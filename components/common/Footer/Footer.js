@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="absolute top-3 left-[5%] -z-10 h-5 w-[90%] max-w-[500rem] bg-gradient-to-r from-sky-500 from-10% via-indigo-500 via-30% to-emerald-500 to-90% blur-[55px]" />
 
       <div className="w-full bg-white/50 backdrop-blur-md">
-        <div className="mx-auto w-full max-w-5xl py-4">
-          <div className="flex h-full w-full flex-wrap items-center justify-center gap-2 px-4 text-[#626262] sm:gap-5 lg:justify-between">
+        <div className="mx-auto w-full max-w-5xl px-4 py-4">
+          <div className="flex h-full w-full flex-wrap items-center justify-center gap-2 text-[#626262] sm:gap-5 lg:justify-between">
             <p className="font-ovo text-center text-[16px] capitalize">
               © 2025 Md Sabbir Hossain. All rights reserved.
             </p>

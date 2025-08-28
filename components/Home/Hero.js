@@ -40,9 +40,9 @@ const Hero = () => {
             initial={{ y: -30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-ovo w-full max-w-4xl text-3xl text-gray-900 capitalize md:text-5xl lg:text-7xl"
+            className="font-ovo w-full max-w-4xl text-3xl text-gray-900 md:text-5xl lg:text-7xl"
           >
-            full stack web developer from Bangladesh.
+            Full stack web developer from Bangladesh.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}

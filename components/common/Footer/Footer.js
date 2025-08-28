@@ -1,9 +1,8 @@
 import Link from "next/link";
-import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="relative mt-[150px] w-full border-t border-gray-300/50">
+    <footer className="relative mt-[100px] w-full border-t border-gray-300/50">
       {/* background */}
       <div className="absolute top-3 left-[5%] -z-10 h-5 w-[90%] max-w-[500rem] bg-gradient-to-r from-sky-500 from-10% via-indigo-500 via-30% to-emerald-500 to-90% blur-[55px]" />
 

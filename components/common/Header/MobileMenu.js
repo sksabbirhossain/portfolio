@@ -37,6 +37,14 @@ const MobileMenu = () => {
       </li>
       <li onClick={mobileMenuHandler}>
         <a
+          href="#skills"
+          className="font-ovo cursor-pointer text-[16px] font-medium text-gray-800 transition-all duration-300 ease-in-out hover:text-emerald-600"
+        >
+          My Skills
+        </a>
+      </li>
+      <li onClick={mobileMenuHandler}>
+        <a
           href="#projects"
           className="font-ovo cursor-pointer text-[16px] font-medium text-gray-800 transition-all duration-300 ease-in-out hover:text-emerald-600"
         >

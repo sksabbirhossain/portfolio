@@ -34,13 +34,13 @@ const About = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
-        className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-6 sm:gap-6"
+        className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-6 md:gap-6"
       >
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="sm:col-span-2"
+          className="hidden md:col-span-2 md:block"
         >
           <Image
             src={"/image.png"}
@@ -54,7 +54,7 @@ const About = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.8 }}
-          className="relative space-y-3 sm:col-span-4"
+          className="relative space-y-3 md:col-span-4"
         >
           {/* about */}
           <motion.p

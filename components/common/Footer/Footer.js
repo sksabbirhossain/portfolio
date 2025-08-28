@@ -35,7 +35,7 @@ const Footer = () => {
 
             {/* social link */}
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <div class="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 p-1.5 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <div className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 p-1.5 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
                 <Link
                   href={"https://www.linkedin.com/in/sk-sabbir-hossain"}
                   target="_blank"
@@ -49,7 +49,7 @@ const Footer = () => {
                 </Link>
               </div>
 
-              <div class="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 p-1.5 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <div className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 p-1.5 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
                 <Link
                   href={"https://www.github.com/sksabbirhossain"}
                   target="_blank"
@@ -63,7 +63,7 @@ const Footer = () => {
                 </Link>
               </div>
 
-              <div class="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 p-1.5 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <div className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 p-1.5 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
                 <Link
                   href={"https://www.facebook.com/sksabbirhossain4"}
                   target="_blank"
@@ -77,7 +77,7 @@ const Footer = () => {
                 </Link>
               </div>
 
-              <div class="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 p-1.5 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
+              <div className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 p-1.5 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg">
                 <Link
                   href={"https://www.instagram.com/sk.sabbir.hossain"}
                   target="_blank"

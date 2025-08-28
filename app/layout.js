@@ -22,6 +22,14 @@ export const metadata = {
   description: "My personal portfolio website",
 };
 
+// themeColor
+export const viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#009966" },
+    { media: "(prefers-color-scheme: dark)", color: "#009966" },
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

@@ -18,8 +18,15 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "Portfolio",
-  description: "My personal portfolio website",
+  title: {
+    default: "Portfolio",
+    template: "%s - Portfolio",
+  },
+  description:
+    "Md Sabbir Hossain – Full Stack MERN Developer from Bangladesh. I create modern, responsive websites and web applications using Next.js, React, Node.js, Express, and MongoDB. Explore my portfolio to see projects in real-time apps, authentication systems, and scalable solutions",
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 // themeColor

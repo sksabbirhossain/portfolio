@@ -1,10 +1,11 @@
+import { createContactEmailTemplate } from "@/utils/emailTemplate";
 import nodemailer from "nodemailer";
 
 export async function POST(req) {
   try {
-    const { name, email, phone, message } = await req.json();
+    const { name, email, message } = await req.json();
 
-    if (!name || !email || !phone || !message) {
+    if (!name || !email || !message) {
       return new Response(
         JSON.stringify({
           errors: {
@@ -30,20 +31,37 @@ export async function POST(req) {
     const mailOptions = {
       from: `"Portfolio Contact" <${process.env.GMAIL_USER}>`,
       to: process.env.GMAIL_USER, // send to your Gmail
-      subject: `New Contact Form Submission from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
+      subject: `📩 New Message from ${name} via Portfolio Website`,
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+      html: createContactEmailTemplate(name, email, message),
     };
 
     // Send email
     const sendMsgRes = await transporter.sendMail(mailOptions);
 
-    console.log("Message sent: %s", sendMsgRes);
+    if (!sendMsgRes.accepted.length) {
+      return new Response(
+        JSON.stringify({
+          errors: {
+            common: {
+              msg: "Failed to send message. Please try again.",
+            },
+          },
+        }),
+        { status: 500 },
+      );
+    }
 
-    return new Response(JSON.stringify({ msg: "Message sent successfully!" }), {
-      status: 200,
-    });
+    //   success
+    return new Response(
+      JSON.stringify({
+        msg: "Message sent successfully!",
+      }),
+      {
+        status: 200,
+      },
+    );
   } catch (err) {
-    console.error("error", err);
     return new Response(
       JSON.stringify({
         errors: {

@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PORTFOLIO
 
-## Getting Started
+![Website Badge](https://img.shields.io/badge/Portfolio-Website-blue)
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v4-blue?logo=tailwind-css)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-First, run the development server:
+> A modern, responsive, and professional personal portfolio website showcasing my projects, skills, and contact information.
+
+[🌐 Live Demo](https://your-portfolio-link.com)
+
+## 📑 Table of Contents
+
+- [PORTFOLIO](#portfolio)
+  - [📑 Table of Contents](#-table-of-contents)
+  - [🌟 Features](#-features)
+  - [🛠 Technologies Used](#-technologies-used)
+  - [🚀 Installation](#-installation)
+  - [📦 Usage](#-usage)
+  - [📧 Contact Form](#-contact-form)
+  - [🌐 Deployment](#-deployment)
+  - [📁 Folder Structure (Simplified)](#-folder-structure-simplified)
+  - [👤 Connect with Me](#-connect-with-me)
+
+## 🌟 Features
+
+- **Responsive Design** – Works beautifully on desktop, tablet, and mobile.
+- **Contact Form** – Visitors can send messages directly to Gmail.
+  **Projects Showcase** – Highlight your best work with live demos and code links.
+- **Skills Section** – Display technical skills and experience.
+- **Smooth Animations** – Engaging transitions using Framer Motion.
+- **SEO Optimized** – Fast loading and search engine friendly.
+
+## 🛠 Technologies Used
+
+- **Frontend:** React.js, Next.js 15, Tailwind CSS v4
+- **Backend:** Next.js API Routes, Nodemailer
+- **Deployment:** Vercel / Netlify
+- **Other:** Google Fonts, Framer Motion
+
+## 🚀 Installation
+
+1. **Clone the repository**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+    git clone https://github.com/sksabbirhossain/portfolio.git
+    cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+    yarn
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Set up environment variables**
 
-## Learn More
+   Create a .env file at the root and add your Gmail credentials for the contact form:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+    GMAIL_USER=your-email@gmail.com
+    GMAIL_PASS=your-app-password
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Make sure to generate a Gmail App Password for security.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Run the development server**
 
-## Deploy on Vercel
+```bash
+    yarn run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    Open http://localhost:3000 to view it in the browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📦 Usage
+
+- **Homepage:** Introduction and hero section.
+- **Projects:** Showcase your work with descriptions and links.
+- **Skills:** Highlight your expertise and technologies.
+- **Contact:** Visitors can send messages via the contact form.
+
+## 📧 Contact Form
+
+The contact form uses Next.js API routes with Nodemailer to send messages to your Gmail inbox. Make sure to set your Gmail credentials in .env
+
+## 🌐 Deployment
+
+- Easily deployable on Vercel, Netlify, or any hosting supporting Next.js.
+- Optimized for fast loading and SEO friendly.
+
+## 📁 Folder Structure (Simplified)
+
+```bash
+/app                  # Next.js App Router pages
+/components           # Reusable components
+/utils                # Helper functions (e.g., email template)
+/public               # Static assets (images, icons)
+/app/globals.css      # Global Ccss/ Tailwind configuration
+.env                  # Environment variables (Gmail credentials)
+```
+
+## 👤 Connect with Me
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-🌐-blue?style=for-the-badge)](https://sk-sabbir-hossain-portfolio.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-🔗-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/sk-sabbir-hossain)
+[![Facebook](https://img.shields.io/badge/Facebook-📘-1877F2?style=for-the-badge)](https://www.facebook.com/sksabbirhossain4)
+[![Instagram](https://img.shields.io/badge/Instagram-📸-E4405F?style=for-the-badge)](https://instagram.com/your-instagram)
+[![GitHub](https://img.shields.io/badge/GitHub-🐙-181717?style=for-the-badge)](https://github.com/sksabbirhossain)

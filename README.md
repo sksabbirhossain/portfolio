@@ -7,7 +7,7 @@
 
 > A modern, responsive, and professional personal portfolio website showcasing my projects, skills, and contact information.
 
-[🌐 Live Demo](https://your-portfolio-link.com)
+[🌐 Live Demo](https://sk-sabbir-hossain-portfolio.vercel.app)
 
 ## 📑 Table of Contents
 
@@ -104,5 +104,5 @@ The contact form uses Next.js API routes with Nodemailer to send messages to you
 [![Portfolio](https://img.shields.io/badge/Portfolio-🌐-blue?style=for-the-badge)](https://sk-sabbir-hossain-portfolio.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-🔗-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/sk-sabbir-hossain)
 [![Facebook](https://img.shields.io/badge/Facebook-📘-1877F2?style=for-the-badge)](https://www.facebook.com/sksabbirhossain4)
-[![Instagram](https://img.shields.io/badge/Instagram-📸-E4405F?style=for-the-badge)](https://instagram.com/your-instagram)
+[![Instagram](https://img.shields.io/badge/Instagram-📸-E4405F?style=for-the-badge)](https://www.instagram.com/sk.sabbir.hossain/)
 [![GitHub](https://img.shields.io/badge/GitHub-🐙-181717?style=for-the-badge)](https://github.com/sksabbirhossain)

@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "eslint"
   },
@@ -12,6 +13,7 @@
     "@studio-freight/lenis": "^1.0.42",
     "motion": "^12.23.12",
     "next": "15.5.0",
+    "next-sitemap": "^4.2.3",
     "nodemailer": "^7.0.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",

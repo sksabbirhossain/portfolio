@@ -17,15 +17,50 @@ const ovo = Ovo({
   display: "swap",
 });
 
+// metadata
 export const metadata = {
-  title: {
-    default: "Portfolio",
-    template: "%s - Portfolio",
-  },
+  title: "Sk Sabbir Hossain | Full Stack Web Developer",
   description:
-    "Md Sabbir Hossain – Full Stack MERN Developer from Bangladesh. I create modern, responsive websites and web applications using Next.js, React, Node.js, Express, and MongoDB. Explore my portfolio to see projects in real-time apps, authentication systems, and scalable solutions",
+    "I'm Sk Sabbir Hossain, a Bangladeshi Full Stack Web Developer (MERN Stack) skilled in Next.js, React, Node.js, and MongoDB. Passionate about building production-grade web applications.",
+  keywords: [
+    "Sk Sabbir Hossain",
+    "Full Stack Developer",
+    "MERN Stack Developer",
+    "Next.js Developer",
+    "React Developer",
+    "Node.js Developer",
+  ],
+  authors: [
+    {
+      name: "Sk Sabbir Hossain",
+      url: "https://sk-sabbir-hossain-portfolio.vercel.app",
+    },
+  ],
+  openGraph: {
+    title: "Sk Sabbir Hossain | Full Stack Web Developer",
+    description:
+      "Full Stack Web Developer skilled in Next.js, React, Node.js, and MongoDB.",
+    url: "https://sk-sabbir-hossain-portfolio.vercel.app",
+    siteName: "Sk Sabbir Hossain Portfolio",
+    images: [
+      {
+        url: "https://sk-sabbir-hossain-portfolio.vercel.app/sk-sabbir-hossain.png",
+        width: 1200,
+        height: 630,
+        alt: "Sk Sabbir Hossain",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
   twitter: {
     card: "summary_large_image",
+    title: "Sk Sabbir Hossain | Full Stack Web Developer",
+    description:
+      "Full Stack Web Developer skilled in Next.js, React, Node.js, and MongoDB.",
+    images: [
+      "https://sk-sabbir-hossain-portfolio.vercel.app/sk-sabbir-hossain.png",
+    ],
   },
 };
 

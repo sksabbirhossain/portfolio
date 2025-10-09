@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sk-sabbir-hossain-portfolio.vercel.app
+
+# Sitemaps
+Sitemap: https://sk-sabbir-hossain-portfolio.vercel.app/sitemap.xml

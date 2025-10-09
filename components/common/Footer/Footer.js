@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="mx-auto w-full max-w-5xl px-4 py-4">
           <div className="flex h-full w-full flex-wrap items-center justify-center gap-2 text-[#626262] sm:gap-5 lg:justify-between">
             <p className="font-ovo text-center text-[16px] capitalize">
-              © 2025 Md Sabbir Hossain. All rights reserved.
+              © 2025 Sk Sabbir Hossain. All rights reserved.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">

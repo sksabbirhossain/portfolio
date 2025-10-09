@@ -19,21 +19,21 @@ const Hero = () => {
             transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
           >
             <Image
-              src={"/me.png"}
+              src={"/sk-sabbir-hossain.png"}
               width={150}
               height={150}
               alt="me image"
-              className="h-24 w-24 rounded-full object-cover ring-2 ring-emerald-100 sm:h-26 sm:w-26"
+              className="h-24 w-24 rounded-full object-cover ring-2 ring-emerald-300 sm:h-26 sm:w-26"
             />
           </motion.div>
-          <motion.p
+          <motion.h1
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="font-ovo text-xl text-gray-600 capitalize sm:text-2xl"
           >
-            Hi👋I’m Md Sabbir Hossain 
-          </motion.p>
+            Hi👋I’m Sk Sabbir Hossain
+          </motion.h1>
         </div>
         <div className="mt-3 flex flex-col items-center justify-center text-center">
           <motion.h1

@@ -62,6 +62,10 @@ export const metadata = {
       "https://sk-sabbir-hossain-portfolio.vercel.app/sk-sabbir-hossain.png",
     ],
   },
+
+  verification: {
+    google: "YH95OYrJ-0z6gJv-p1Foci57M8KsXqGUTuoxZo88Tvs",
+  },
 };
 
 // themeColor

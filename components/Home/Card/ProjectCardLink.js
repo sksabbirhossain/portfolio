@@ -10,7 +10,12 @@ const ProjectCardLink = ({ frontend, live, backend }) => {
           target="_blank"
           className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 p-1.5 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg"
         >
-          <Image src={"/tech/github.png"} width={40} height={40} alt="icon" />
+          <Image
+            src={"/projects/github-mark.svg"}
+            width={40}
+            height={40}
+            alt="icon"
+          />
         </Link>
       )}
       {live && (
@@ -19,7 +24,7 @@ const ProjectCardLink = ({ frontend, live, backend }) => {
           target="_blank"
           className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 p-1.5 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg"
         >
-          <span className="text-gray-600">
+          <span className="text-gray-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -43,7 +48,12 @@ const ProjectCardLink = ({ frontend, live, backend }) => {
           target="_blank"
           className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 p-1.5 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg"
         >
-          <Image src={"/tech/github.png"} width={40} height={40} alt="icon" />
+          <Image
+            src={"/projects/github-mark.svg"}
+            width={40}
+            height={40}
+            alt="icon"
+          />
         </Link>
       )}
     </div>

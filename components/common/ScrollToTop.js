@@ -34,7 +34,7 @@ export default function ScrollToTop() {
             <div className="absolute -top-5 -left-6 -z-10 h-24 w-24 max-w-[500rem] rounded-full bg-gradient-to-r from-indigo-500 from-10% via-red-400 via-30% to-emerald-500 to-90% blur-[45px]" />
             <div
               onClick={scrollToTop}
-              className="z-20 h-full w-full cursor-pointer rounded-full bg-emerald-600/80 p-3 text-white shadow-lg backdrop-blur-2xl transition-all duration-300 hover:bg-emerald-700/80"
+              className="z-20 h-full w-full cursor-pointer rounded-full border border-gray-500/30 bg-emerald-600 p-3 text-center text-gray-100 transition-all duration-500 ease-in-out hover:border-gray-200/30 hover:bg-gray-100/30 hover:text-gray-700 hover:shadow hover:shadow-gray-400/30 hover:backdrop-blur-sm"
             >
               <motion.p
                 animate={{ y: [0, -5, 0] }} // bounce up & down
